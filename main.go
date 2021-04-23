@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 	"math/rand"
 	"strings"
 	"time"
@@ -15,7 +14,7 @@ const (
 )
 
 func main() {
-	length := flag.Int("l", 8, fmt.Sprintf("password length"))
+	length := flag.Int("l", 16, "password length")
 	flag.Parse()
 
 	runes := []rune(chars)
